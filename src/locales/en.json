@@ -1,0 +1,17 @@
+{
+  "sr-title": "Hotel information",
+  "title": "Best price",
+  "labels": {
+    "checkIn": "Check In",
+    "checkOut": "Check Out",
+    "rooms": "Rooms",
+    "nights": "Night",
+    "adults": "Adults",
+    "children": "Children",
+    "totalGuests": "Total",
+    "originalPrice": "Standart price",
+    "promoPrice": "Promotion price",
+    "breakfast": "Breakfast",
+    "cancellation": "Free cancellation"
+  }
+}

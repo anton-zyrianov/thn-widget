@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Avenir';
+    src:
+      url('/fonts/Avenir-bold.woff2') format('woff2'),
+      url('/fonts/Avenir-bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Avenir';
+    src:
+      url('/fonts/Avenir-medium.woff2') format('woff2'),
+      url('/fonts/Avenir-medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Avenir';
+    src:
+      url('/fonts/Avenir-regular.woff2') format('woff2'),
+      url('/fonts/Avenir-regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Marselis';
+    src:
+      url('/fonts/Marselis-bold.woff2') format('woff2'),
+      url('/fonts/Marselis-bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'TuskerGrotesk';
+    src:
+      url('/fonts/Marselis-regular.woff2') format('woff2'),
+      url('/fonts/Marselis-regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  @apply max-h-screen;
+  transition: all 0.5s ease;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  @apply max-h-0;
+}
+
+:focus-visible {
+  @apply outline-2 outline-blue-500 outline-offset-2;
+}
+
+.expand-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
