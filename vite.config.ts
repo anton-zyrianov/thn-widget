@@ -14,7 +14,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        'thn-best-price': fileURLToPath(new URL('./src/main.ts', import.meta.url)),
+        'thn-best-price': fileURLToPath(
+          new URL('./src/main.ts', import.meta.url)
+        ),
       },
       output: {
         inlineDynamicImports: false,

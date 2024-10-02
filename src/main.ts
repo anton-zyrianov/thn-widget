@@ -7,8 +7,6 @@ import en from '@/locales/en.json'
 import es from '@/locales/es.json'
 import { vueDefineCustomElement } from '@/shared/vueDefineCustomElement'
 
-import { LANG_KEY_LOCALSTORAGE } from '@/constants'
-
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -18,7 +16,7 @@ const router = createRouter({
 
 const i18n = createI18n<false>({
   legacy: false,
-  locale: window.localStorage.getItem(LANG_KEY_LOCALSTORAGE) || 'en',
+  locale: document.documentElement.lang || 'en',
   fallbackLocale: 'en',
   messages: {
     es,
